@@ -1,7 +1,7 @@
 --- Desafio de testes ---
 
 Para execução do teste:
-1- Colocar o arquivo do Github em um diretório
+1- Colocar o arquivo do Github em um diretório no computador
 2- Abrir o prompt de comando e acessar o diretório escolhido (..\SuiteSiteTestPractice\tests)
 3- Informar o comando (para executar o teste): robot -d .results TestSiteDesafio.robot
 
