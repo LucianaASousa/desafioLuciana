@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180701 01:46:06.067" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="C:\Projetos\SuiteSiteTestePractice\tests\TestSiteDesafio.robot" id="s1" name="TestSiteDesafio">
+<test id="s1-t1" name="Cenário 01: Entrada de parâmetros para busca">
+<kw type="setup" name="Abrir navegador" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180701 01:46:06.608" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20180701 01:46:11.010" starttime="20180701 01:46:06.608"></status>
+</kw>
+<status status="PASS" endtime="20180701 01:46:11.011" starttime="20180701 01:46:06.608"></status>
+</kw>
+<kw name="Dado que estou na página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.voeazul.com.br/</arg>
+</arguments>
+<msg timestamp="20180701 01:46:11.012" level="INFO">Opening url 'https://www.voeazul.com.br/'</msg>
+<status status="PASS" endtime="20180701 01:46:18.938" starttime="20180701 01:46:11.012"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Azul - Linhas Aéreas Brasileiras. Você lá em cima.</arg>
+</arguments>
+<msg timestamp="20180701 01:46:18.947" level="INFO">Page title is 'Azul - Linhas Aéreas Brasileiras. Você lá em cima.'.</msg>
+<status status="PASS" endtime="20180701 01:46:18.948" starttime="20180701 01:46:18.938"></status>
+</kw>
+<status status="PASS" endtime="20180701 01:46:18.948" starttime="20180701 01:46:11.011"></status>
+</kw>
+<kw name="Quando eu digitar as informações &quot;São Paulo - Viracopos (VCP)&quot;, &quot;Belo Horizonte - Confins (CNF)&quot;, &quot;03/07/2018&quot;, &quot;10/07/2018&quot;, &quot;3&quot;" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=ticket-origin1</arg>
+<arg>${ORIGEM}</arg>
+</arguments>
+<msg timestamp="20180701 01:46:18.950" level="INFO">Typing text 'São Paulo - Viracopos (VCP)' into text field 'id=ticket-origin1'.</msg>
+<status status="PASS" endtime="20180701 01:46:20.487" starttime="20180701 01:46:18.949"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=ticket-destination1</arg>
+<arg>${DESTINO}</arg>
+</arguments>
+<msg timestamp="20180701 01:46:20.488" level="INFO">Typing text 'Belo Horizonte - Confins (CNF)' into text field 'id=ticket-destination1'.</msg>
+<status status="PASS" endtime="20180701 01:46:21.814" starttime="20180701 01:46:20.487"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=ticket-departure1</arg>
+<arg>${PARTIDA}</arg>
+</arguments>
+<msg timestamp="20180701 01:46:21.814" level="INFO">Typing text '03/07/2018' into text field 'id=ticket-departure1'.</msg>
+<status status="PASS" endtime="20180701 01:46:22.659" starttime="20180701 01:46:21.814"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=ticket-arrival1</arg>
+<arg>${RETORNO}</arg>
+</arguments>
+<msg timestamp="20180701 01:46:22.660" level="INFO">Typing text '10/07/2018' into text field 'id=ticket-arrival1'.</msg>
+<status status="PASS" endtime="20180701 01:46:23.462" starttime="20180701 01:46:22.660"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=ticket-adults</arg>
+<arg>${PASSAGEIROS}</arg>
+</arguments>
+<msg timestamp="20180701 01:46:23.463" level="INFO">Typing text '3' into text field 'id=ticket-adults'.</msg>
+<status status="PASS" endtime="20180701 01:46:23.657" starttime="20180701 01:46:23.462"></status>
+</kw>
+<status status="PASS" endtime="20180701 01:46:23.657" starttime="20180701 01:46:18.949"></status>
+</kw>
+<kw name="Então as informações do voo devem ser listadas se forem referentes a voos que satisfaçam as condições de busca" library="Resource">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Buscar passagens</arg>
+</arguments>
+<msg timestamp="20180701 01:46:23.659" level="INFO">Clicking button 'Buscar passagens'.</msg>
+<status status="PASS" endtime="20180701 01:46:24.073" starttime="20180701 01:46:23.659"></status>
+</kw>
+<status status="PASS" endtime="20180701 01:46:24.073" starttime="20180701 01:46:23.658"></status>
+</kw>
+<status status="PASS" endtime="20180701 01:46:24.074" critical="yes" starttime="20180701 01:46:06.608"></status>
+</test>
+<status status="PASS" endtime="20180701 01:46:24.076" starttime="20180701 01:46:06.073"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSiteDesafio" pass="1">TestSiteDesafio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
