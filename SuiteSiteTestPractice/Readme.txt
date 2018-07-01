@@ -8,7 +8,7 @@ Para execução do teste:
 Problemas que poderão acontecer na execução do teste:
 - O site que está sendo testado (Voe Azul) possui problemas durante a inserção dos dados, então na hora de executar o teste, as informações de Origem e Destino não ficam salvas. E também, nos campos de data, as vezes não mostram todos os caracteres inseridos ou as vezes trocam de lugar as informações (exemplo MM/DD/AAAA).
 
-Necessário: Ter o navegador Chrome.
+Necessário: Instalar o Python, Robot framework e baixar o Chrome Driver (extrair dentro da pasta do Python/Scripts).
 
 ---
 Linguagem: Python
