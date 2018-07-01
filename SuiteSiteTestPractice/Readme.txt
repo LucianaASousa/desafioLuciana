@@ -13,4 +13,4 @@ Necessário: Ter o navegador Chrome.
 ---
 Linguagem: Python
 Framework: Robot
-Critério: o Robot é um framework que pode ser testado em qualquer sistema e possui sintaxe de escrita tabular fácil de utilizar em qualquer editor. Além disso utiliza o Python, que é uma linguagem muito simples de usar. Então, aproveitei o desafio para aprender a usar o Robot Framework.
+Critério: o Robot é um framework que pode ser testado em qualquer sistema e possui sintaxe de escrita tabular fácil de utilizar em qualquer editor. Além disso utiliza o Python, que é uma linguagem simples e com sintaxe intuitiva. Então, aproveitei o desafio para aprender a usar o Robot Framework.
